@@ -2,7 +2,7 @@ Package: qualcodeR
 Type: Package
 Title: An R package for manipulating data extracted from QualCoder
 Version: 0.1.0
-Author: Alexandre Gareau & Matthew Ross
+Author: Alexandre Gareau, Matthew Ross
 Maintainer: Alexandre Gareau <alexandregareau.ag@gmail.com>
 Description: 
 License: 
