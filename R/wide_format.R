@@ -1,14 +1,22 @@
-#' Pivoting qualcoder data into one columne per code and category `(theme)`
+#' Generate a coded `data.frame` with 0 and 1 for each code and category
 #'
-#' @param filepath
+#' `coded_data01` will pivot the QualCoder data to have one row per participant with a column for each code and category. Each cell in those columns will have 0 or 1 to denote the presence of the code or category for each participant.
+#'
+#' @param filepath Location of the file on your computer (file path). Using RProject feature will allow shorter file path.
+#' The file can be an excel `.xlsx` or a CSV `.csv`.
 #'
 #' @return A data.frame with one column per code and category. Each row represent one participant, and each code and category are coded with 1 and 0.
 #' @export
 #'
 #' @examples
+#' # Without using RProject
+#' coded_data01("C:/Users/alexandre.gareau.CORA/Documents/Research projects/qualcoderdata.xlsx")
 #'
+#' # Using RProject
+#' coded_data01("qualcoderdata.xlsx")
 #'
-wide_format <- function(filepath) {
+
+coded_data01 <- function(filepath) {
   read_data <- function(path, sheet = NULL) {
     if (!file.exists(path)) stop("File does not exist: ", path)
 
