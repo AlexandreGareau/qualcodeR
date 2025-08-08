@@ -59,11 +59,11 @@ The file can be an excel `.xlsx` or a CSV `.csv`.</p></dd>
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># Without using RProject</span></span></span>
 <span class="r-in"><span><span class="fu">coded_data01</span><span class="op">(</span><span class="st">"C:/Users/alexandre.gareau.CORA/Documents/Research projects/qualcoderdata.xlsx"</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in read_data(filepath) %&gt;% select(1, 2, 5, 6) %&gt;% rename(ID = 1):</span> could not find function "%&gt;%"</span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in read_data(filepath):</span> File does not exist: C:/Users/alexandre.gareau.CORA/Documents/Research projects/qualcoderdata.xlsx</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Using RProject</span></span></span>
 <span class="r-in"><span><span class="fu">coded_data01</span><span class="op">(</span><span class="st">"qualcoderdata.xlsx"</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in read_data(filepath) %&gt;% select(1, 2, 5, 6) %&gt;% rename(ID = 1):</span> could not find function "%&gt;%"</span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in read_data(filepath):</span> File does not exist: qualcoderdata.xlsx</span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
