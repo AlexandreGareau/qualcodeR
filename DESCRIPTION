@@ -11,3 +11,8 @@ LazyData: true
 URL: https://github.com/AlexandreGareau/qualcodeR, https://alexandregareau.github.io/qualcodeR/
 BugReports: https://github.com/AlexandreGareau/qualcodeR/issues
 RoxygenNote: 7.3.2
+Depends: 
+    tidyverse
+Imports: 
+    readxl,
+    tools
